@@ -1,12 +1,18 @@
-allow_embedding: false
-package_name: GMC_Name_and_age
-name: Clone of GMC Name and age
-startup_form: Form1
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
 dependencies: []
-metadata: {title: Name and age, description: Name and age}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+package_name: GMC_Name_and_age
+allow_embedding: false
+name: GMC Shakespearean insults
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {title: Shakespearean insults, description: Shakespearean insults}
+startup_form: Form1
+db_schema:
+  table_1:
+    title: Table 1
+    client: none
+    server: full
+    columns: []
