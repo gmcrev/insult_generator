@@ -10,6 +10,12 @@ class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+
+  def get_old_insult_click(self, **event_args):
+    self.make_old_insult()
+      
+  def get_insult_click(self, **event_args):
+    self.make_insult()
     
   def make_old_insult(self):
     insult1 = ['artless', 'bawdy', 'beslubbering', 'bootless',
@@ -61,12 +67,6 @@ class Form1(Form1Template):
         'whey-face'
     ]
     self.output.text = "Thou art a " + choice(insult1) + " " + choice(insult2) + " " + choice(insult3)
-  
-  def get_old_insult_click(self, **event_args):
-    self.make_old_insult()
-      
-  def get_insult_click(self, **event_args):
-    self.make_insult()
       
   def make_insult(self):
     insult1 = ['animalistic', 'appalling', 'awful', 'bad-looking',
