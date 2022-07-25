@@ -5,14 +5,9 @@ services:
   server_config: {}
 package_name: GMC_Name_and_age
 allow_embedding: false
-name: GMC Shakespearean insults
+name: GMC Insult Generator
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {title: Shakespearean insults, description: Shakespearean insults}
 startup_form: Form1
-db_schema:
-  table_1:
-    title: Table 1
-    client: none
-    server: full
-    columns: []
+db_schema: {}

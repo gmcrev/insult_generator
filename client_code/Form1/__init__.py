@@ -11,7 +11,7 @@ class Form1(Form1Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     
-  def make_insult(self):
+  def make_old_insult(self):
     insult1 = ['artless', 'bawdy', 'beslubbering', 'bootless',
         'burly-boned', 'caluminous', 'churlish', 'clouted',
         'cockered', 'craven', 'cullionly', 'currish', 'dankish',
@@ -62,10 +62,46 @@ class Form1(Form1Template):
     ]
     self.output.text = "Thou art a " + choice(insult1) + " " + choice(insult2) + " " + choice(insult3)
   
+  def get_old_insult_click(self, **event_args):
+    self.make_old_insult()
+      
   def get_insult_click(self, **event_args):
-      self.make_insult()
-
-
-
+    self.make_insult()
+      
+  def make_insult(self):
+    insult1 = ['animalistic', 'appalling', 'awful', 'bad-looking',
+        'beastly', 'deformed', 'disfigured', 'foul', 'frightful',
+        'grisly', 'gross', 'grotesque', 'hard-featured', 'hideous',
+        'horrid', 'ill-favored', 'loathsome', 'misshapen',
+        'monstrous', 'not much to look at', 'repelling', 'repugnant',
+        'repulsive', 'revolting', 'unbeautiful', 'uncomely',
+        'uninviting', 'unlovely', 'unsightly',
+    ]
+    insult2 = ['abrupt', 'abusive', 'bad-mannered', 'barbaric',
+        'barbarous', 'blunt', 'boorish', 'brusque', 'brutish',
+        'cheeky', 'churlish', 'coarse', 'crabbed', 'crude', 'curt',
+        'discourteous', 'graceless', 'gross', 'gruff', 'ignorant',
+        'illiterate', 'impertinent', 'impolite', 'impudent',
+        'inconsiderate', 'insolent', 'insulting', 'intrusive',
+        'loutish', 'obscene', 'raw', 'savage', 'scurrilous', 'surly',
+        'uncivil', 'uncivilized', 'uncouth', 'uncultured',
+        'uneducated', 'ungracious', 'unmannerly', 'unpolished',
+        'unrefined', 'vulgar', 'wild',
+    ]
+    insult3 = ['bad guy', 'bad person', 'baddie', 'baddy',
+        'black marketeer', 'blackmailer', 'blockhead', 'bonehead',
+        'clodpoll', 'con', 'convict', 'cretin', 'crook', 'culprit',
+        'delinquent', 'desperado', 'deuce', 'dimwit', 'dork',
+        'dumbbell', 'dunce', 'evildoer', 'ex-con', 'felon', 'fool',
+        'fugitive', 'gangster', 'guerilla', 'hood', 'hoodlum',
+        'hooligan', 'hustler', 'ignoramus', 'imbecile',
+        'inside person', 'jailbird', 'jerk', 'lawbreaker',
+        'malefactor', 'mobster', 'moron', 'mug', 'muttonhead',
+        'nincompoop', 'ninny', 'nitwit', 'offender', 'outlaw',
+        'pinhead', 'racketeer', 'simpleton', 'sinner', 'slippery eel',
+        'thug', 'tomfool', 'twit', 'wrongdoer', 'yardbird',
+    ]
+    self.output.text = "You are a " + choice(insult1) + " " + choice(insult2) + " " + choice(insult3)
+    
 
 
