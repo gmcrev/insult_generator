@@ -16,7 +16,7 @@ components:
     name: instructions
     layout_properties: {grid_position: 'MLOPAJ,MKFYLM'}
   - type: Button
-    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    properties: {role: secondary-color, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Shakespearean Insult, font_size: 28, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
@@ -24,7 +24,7 @@ components:
     layout_properties: {grid_position: 'DRFVNF,AXXQDT'}
     event_bindings: {click: get_old_insult_click}
   - type: Button
-    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+    properties: {role: primary-color, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Modern Insult, font_size: 28, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}

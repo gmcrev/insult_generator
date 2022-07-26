@@ -66,7 +66,8 @@ class Form1(Form1Template):
         'strumpet', 'toad', 'varlot', 'vassal', 'wagtail',
         'whey-face'
     ]
-    self.output.text = "Thou art a " + choice(insult1) + " " + choice(insult2) + " " + choice(insult3)
+    self.output.text = ("Thou art a " + choice(insult1) + " " +
+        choice(insult2) + " " + choice(insult3) + ".")
       
   def make_insult(self):
     insult1 = ['animalistic', 'appalling', 'awful', 'bad-looking',
@@ -101,7 +102,8 @@ class Form1(Form1Template):
         'pinhead', 'racketeer', 'simpleton', 'sinner', 'slippery eel',
         'thug', 'tomfool', 'twit', 'wrongdoer', 'yardbird',
     ]
-    self.output.text = "You are a " + choice(insult1) + " " + choice(insult2) + " " + choice(insult3)
+    self.output.text = ("You are a " + choice(insult1) + " " +
+        choice(insult2) + " " + choice(insult3)+ ".")
     
 
 

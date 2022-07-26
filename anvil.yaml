@@ -8,6 +8,6 @@ allow_embedding: false
 name: GMC Insult Generator
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-metadata: {title: Shakespearean insults, description: Shakespearean insults}
+metadata: {title: Insult Generator, description: Insult Generator}
 startup_form: Form1
 db_schema: {}
