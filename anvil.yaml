@@ -1,8 +1,8 @@
 allow_embedding: false
 db_schema: {}
 dependencies: []
-metadata: {description: This app generates a random insult., title: Insult Generator}
-name: PC Insult Generator
+metadata: {description: This app generates a random insult., logo_img: null, title: PC Insult Generator 1}
+name: PC Insult Generator 1
 package_name: GMC_Name_and_age
 runtime_options: {client_version: '3', server_spec: null, server_version: python3-sandbox, version: 2}
 services:
